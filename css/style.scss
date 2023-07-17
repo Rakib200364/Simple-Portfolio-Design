@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&family=Rufina:wght@400;700&display=swap');
+
+body{
+    font-family: "Rubik",sans-serif;
+   
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Rufina",serif;
+	
+}
+
+.navbar{
+    ul{
+        li{
+            position: relative;
+            a{
+                font-size: 16px;
+                text-transform: capitalize;
+                font-weight: 600;
+                margin: 0 6px;
+                color: #333;
+
+                &:hover{
+                    color: #EE5B53;
+                }
+            }
+
+            .navBtn{
+                background-color: #EC5B53;
+                color: #fff;
+                transition: all .2s ease-in;
+                &:hover{
+                   
+                    background-color: #e44239;
+                }
+            }
+        }
+    }
+}
+
+
+#hero{
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    background: url("../img/hero/h1_hero.jpg") no-repeat center center /cover;
+
+    .head-text{
+        color: #EE5B53;
+        font-weight: 300;
+    }
+    .myTitle{
+        color: #002D5B;
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    .learnBtn {
+        background: #ec5b53;
+        padding: 27px 44px;
+        font-family: "Rubik",sans-serif;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 5px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 0;
+        margin: 10px;
+        transition: color 0.4s linear;
+        position: relative;
+        z-index: 1;
+        border: 0;
+        overflow: hidden;
+        margin: 0;
+        transition: all .2s ease-in;
+
+        &:hover{
+            color: #fff !important;
+            background: #e44239;
+            
+        }
+       
+    }
+    .hireBtn{
+        
+        padding: 27px 44px;
+        font-family: "Rubik",sans-serif;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 5px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 0;
+        &:hover{
+            color: #fff !important;
+        }
+    }
+   
+}
+
+#pargraph-section{
+    .para-title{
+        font-size: 30px;
+        color: #000a2d;
+        font-weight: 700;
+        margin-bottom: 35px;
+        line-height: 1.5;
+    }
+    .peragraph-pera{
+        font-family: "Rubik",sans-serif;
+        color: #10285d;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: normal;
+    }
+
+    .pera-head{
+        font-size: 40px;
+        color: #000a2d;
+        margin-bottom: 35px;
+        line-height: 1.5;
+    }
+    h4{
+        color: #464d65;
+        font-size: 20px;
+        font-family: "Rubik",sans-serif;
+        margin-bottom: 10px;
+    }
+    .send-cv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            color: #000a2d;
+            font-size: 30px;
+            font-weight: 500;
+            display: inline-block;
+
+            
+        }
+    }
+   
+}
+
+#services{
+    .section-title{
+        h2{
+            color: #000a2d;
+            font-size: 35px;
+        }
+    }
+
+    .card{
+        position: relative;
+        transition: 0.4s all ease;
+        z-index: 1;
+        overflow: hidden;
+        // card hover
+        &:hover .card-body a,
+        &:hover .card-body p{
+            color: #fff !important;
+        }
+        &:hover .card-body .icon{
+            background: #fff !important;
+        }
+        // card effect
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0;
+            left: 0;
+            top: 100%;
+            background-color: #FF3D1C;
+            z-index: -1;
+            transition: 0.5s all ease-in;
+
+        }
+        &:hover::after{
+            height: 100%;
+            top: 0;
+        }
+        .card-body{
+            .icon{
+                width: 80px;
+                height: 80px;
+                color: #ec5b53;
+                background-color: #fff4f4;
+                transition: .4s all ease;
+                position: relative;
+
+                .speaker{
+                   font-size: 30px;
+                //    line-height: -1 !important;
+                    position: absolute;
+                    top: 32%;
+                    left: 31%;
+                }
+                
+            }
+            a{
+                color: #1c165c;
+                font-size: 30px;
+                transition: .4s all ease;
+            }
+            p{
+                color: #57667e;
+                font-size: 17px;
+                transition: .4s all ease;
+            }
+           }
+    }
+
+   
+} 
+
+#portfolio{
+
+    .section-title{
+        h2{
+            color: #000a2d;
+            font-size: 36px;
+            
+        }
+    }
+    ul{
+        border-bottom: 2px solid #E7EBF2;
+        position: absolute;
+        li{
+            cursor: pointer;
+            padding: 12px 0;
+            color: #161e46;
+            
+        }
+
+        .item{
+           
+            &.active{
+               
+                border-bottom: 2px solid #ff5757;
+                position: relative;
+                top: 2px;
+                left: -10px;
+                // width: 70px;
+            }
+        }
+        
+    }
+
+}
+
+// Want to work area css 
+
+#wantToWork-area {
+    width: 100%;
+    background-image: url(../img/gallery/section_bg02.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 70px 0 !important;
+    padding: 80px 0 !important;
+
+    h2{
+        color: #ec5b53;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    a:hover{
+        color: #fff;
+    }
+
+    .btn{
+        background: #ec5b53;
+        padding: 18px 44px;
+        text-transform: capitalize;
+        font-family: "Rubik",sans-serif;
+        color: #fff;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 5px;
+        font-weight: 500;
+        // letter-spacing: 1px;
+        // line-height: 0;
+        transition: color 0.4s linear;
+        position: relative;
+        z-index: 1;
+        border: 0;
+        overflow: hidden;
+        margin: 0;
+        
+        &:hover::before{
+            transform: scaleX(1);
+            color: #fff !important;
+            z-index: -1;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 101%;
+            height: 101%;
+            background: #e44239;
+            z-index: 1;
+            // border-radius: 5px;
+            transition: transform 0.5s;
+            // transition-timing-function: ease;
+            transform-origin: 0 0;
+            transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+            transform: scaleX(0);
+            
+        }
+
+    }
+}
+
+//client comment css
+
+#client_comment{
+    .section-title{
+        h2{
+            
+        font-size: 44px;
+        display: block;
+        color: #000a2d;
+        font-weight: 600;
+        }
+    }
+    .arrow{
+        font-size: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #ec5b53;
+        border: 1px solid #dfe4ea;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        
+    }
+    .card{
+        padding: 35px 30px !important;
+
+        .single-comment{
+            .client-info{
+                h5{
+                    color: #ec5b53;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                span{
+                    color: #57667e;
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+            }
+        }
+        .client-message{
+            p{
+                font-family: "Rubik",sans-serif;
+                color: #10285d;
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 15px;
+                font-weight: normal;
+                text-align: justify;
+                // word-spacing: -4px;
+                word-break: break-all;
+            }
+        }
+    }
+}
+
+// Contact css
+
+#contact_info_area{
+    .contact_caption{
+        h3{
+            font-size: 35px;
+            display: block;
+            color: #000a2d;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        p{
+            font-family: "Rubik",sans-serif;
+            color: #10285d;
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 40px;
+            font-weight: normal;
+        }
+    }
+    .contact_wrapper{
+        input{
+            background: #fff;
+            height: 60px;
+            width: 100%;
+            padding: 10px 26px;
+            border: 0;
+            color: #a3a3a3;
+            font-weight: 300;
+            text-transform: capitalize;
+            border-radius: 0px;
+            border: 0;
+            margin-bottom: 30px;
+            outline: 0;
+            cursor: pointer;
+        }
+        textarea{
+            color: #a3a3a3;
+            background: #fff;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: capitalize;
+            height: 160px;
+            width: 100%;
+            padding: 30px 26px;
+            border: 0;
+            border-radius: 0px;
+            border: 0;
+            margin-bottom: 30px;
+            outline: 0;
+            cursor: pointer;
+        }
+
+        .submit-btn{
+            background: #ec5b53;
+            width: 100%;
+            height: 60px;
+            padding: 10px 20px;
+            border: 0;
+            color: #fff;
+            text-transform: capitalize;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            
+        }
+    }
+}
+
+//Footer css
+
+footer{
+    .first{
+       padding-right: 130px;
+    }
+    .footer-widget{
+        p{
+            // text-align: justify;
+            word-break: break-all;
+        }
+        .heading{
+            font-size: 22px;
+            font-family: "Rubik",sans-serif;
+            font-weight: 400;
+            
+        }
+        
+        .footer-links{
+            
+            a{
+                transition: 0.3s all ease;
+                &:hover{
+                    margin-left: 5px;
+                    color: #2577fd !important;
+                }
+            }
+        }
+    }
+    .copy-pera{
+        font-size: 17px;
+    }
+
+    .social-icon{
+        font-size: 22px;
+    }
+}
+
+
+@media all and (max-width:768px){
+
+    #client_comment .section-title h2 {
+        font-size: 32px;
+    }
+    #client_comment .arrow {
+        
+        width: 45px;
+        height: 45px;
+        
+    }
+}
+
+
+@media all and (max-width:576px){
+    #portfolio{
+        .img-fluid{
+            width: 100% !important;
+        }
+    }
+    #client_comment .section-title h2 {
+        font-size: 28px;
+    }
+}
+
+@media all and (max-width:540px){
+   
+    #client_comment .section-title h2 {
+        font-size: 36px;
+    }
+   
+}
+@media all and (max-width:480px){
+   .sr_img{
+    margin-top: 30px;
+   }
+   footer{
+    
+    .copy-pera{
+        font-size: 14px !important;
+    }
+    .social-icon{
+        font-size: 16px;
+    }
+   }
+   
+   
+}
+@media all and (max-width:430px){
+   
+    #client_comment .section-title h2 {
+        font-size: 27px;
+    }
+   
+}
+
+@media all and (max-width:372px){
+    #hero .learnBtn {
+        padding: 27px 25px;  
+    }
+    #hero .hireBtn {
+        padding: 25px 25px;
+       
+    }
+   
+}
+@media all and (max-width:320px){
+    
+    #pargraph-section .para-title {
+        font-size: 26px;
+       
+    }
+    #pargraph-section .pera-head {
+        font-size: 32px;
+    }
+    #pargraph-section .send-cv a {
+       
+        font-size: 24px;
+        
+    }
+    .sr_img{
+        margin-top: 30px !important;
+    }
+    #services .section-title h2 {
+        
+        font-size: 34px;
+    }
+    #client_comment .section-title h2 {
+        font-size: 25px;
+    }
+}
+
